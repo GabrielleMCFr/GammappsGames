@@ -2,9 +2,14 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
-import App from './App';
+import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import TicTacToe from './routes/tictactoe';
+import Minesweeper from './routes/minesweeper';
+import Flashcards from './routes/cards';
+
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -12,7 +17,15 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Router>
+        <Routes>
+      <Route path="/" element={<App />}/>
+      <Route path="/tictactoe" element={<TicTacToe />} />
+      <Route path="/flashcards" element={<Flashcards />} />
+      <Route path="/minesweeper" element={<Minesweeper />} />
+      
+      </Routes>
+      </Router>
     </Provider>
   </React.StrictMode>
 );

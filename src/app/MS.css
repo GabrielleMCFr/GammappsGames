@@ -1,0 +1,70 @@
+.MScell {
+    width:50px;
+    height:50px;
+    background-color:rgb(0, 60, 179);
+    border:1px solid rgb(194, 194, 194);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    cursor: pointer;
+    color: white
+}
+
+.MScases {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.MSgame {
+    display : flex;
+    flex-direction : row,
+}
+
+.MSbutton {
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 595px) {
+    .MScell {
+        width:40px;
+        height:40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .MScell {
+        width:30px;
+        height:30px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .MScell {
+        width:20px;
+        height:20px;
+        font-size: 15px;
+    }
+
+    .MScases {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 230px) {
+    .MScell {
+        width:15px;
+        height:15px;
+        font-size: 10px;
+    }
+
+    .MScases {
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+}
