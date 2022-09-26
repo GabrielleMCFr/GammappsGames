@@ -1,13 +1,16 @@
 .App {
   text-align: center;
-  min-width: 200px;
+  min-width: 220px;
+  width: 100%;
+  margin: 0 !important;
+  bottom: 0;
+  top: 0;
+  
 }
-
 
 .Navlink {
   padding: 1rem
 }
-
 
 .viewgame {
   width: 100%;
@@ -37,15 +40,29 @@
   align-items: center;
   border-radius: 2%;
   text-align: center;
+  margin: 20px !important
 }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.558);
-  color:rgb(177, 177, 177)
+  color:rgb(177, 177, 177);
+  width: 100%;
+}
+
+.appFooter {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
 }
 
 
 /* nav */
+
+#imgheader {
+  width: 100vw;
+  height: auto;
+  margin-bottom: 3rem;
+}
 
 #navcontainer {
   padding: 0 1rem;
@@ -61,31 +78,33 @@ h2 {
   padding: 10px 0 30px 0;
 }
 
-#carouselcontainer {
-  margin: 0;
-  width: 100vw;
-}
 
 #carousel {
-  width: 100vw;
-  height: 100vh;
+  height: auto;
+  width: 100vw !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-#carousel img {
-  height: 90vh;
-  width: 100%;
-  overflow: hidden;
-}
 
-#carousel h5 {
+.carlink {
   font-family: 'Bungee Spice', sans-serif;
-  font-size: 2rem;
+  color: white !important
+}
+
+#btcarousel {
+  width: 100%;
+  max-height: 500px;
+}
+
+.imgcar {
+  max-width: 80vw;
+  max-height: 400px;
 }
 
 @media only screen and (max-width: 450px) {
-  .game {
-    margin: 20px !important
-  }
 
   h2 {
     font-size: 2rem;
@@ -104,3 +123,28 @@ h2 {
     font-size: 1.3rem;
   }
 }
+
+
+
+/* index page */
+
+#main-bot { padding: 50px 10px 50px 10px; height: 100%; position: relative; }
+
+#block { padding: 0; margin-bottom: 10px; border-radius: 5px; height: fit-content; position: relative; background-color: #494949}
+.container-title { padding: 10px 10px 10px 9px; width: 100%; background-color: #aeaeae; color: black; font-weight: bold; border-top-left-radius: 5px; border-top-right-radius: 5px;}
+
+#lstgrp {
+  background-color: transparent;
+}
+
+.listItem {
+  background-color: transparent !important; padding: 10px 0
+}
+
+.gamedetail {
+  color: rgb(200, 200, 200);
+  font-size: 0.8rem;
+  padding: 5px 10px 0 10px;
+}
+
+

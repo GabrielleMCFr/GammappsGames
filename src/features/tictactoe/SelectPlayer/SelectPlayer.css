@@ -1,7 +1,8 @@
 .select-player {
     width: 100%;
     text-align: center;
-    color: gray
+    color: white;
+    height: auto
 }
 
 .player {
@@ -35,6 +36,7 @@ label {
     transition: all 0.2s;
     font-size: 7rem;
     text-align: center;
+    margin-bottom: -6rem
 }
 
 

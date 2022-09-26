@@ -1,7 +1,7 @@
 import NavbarBT from '../components/NavbarBT';
 import Footer from '../components/Footer';
-import { Game } from '../components/tictactoe/Game/Game';
-//import { Game } from '../features/tictactoe/Game/Game';
+//import { Game } from '../components/tictactoe/Game/Game';
+import { Game } from '../features/tictactoe/Game/Game';
 
 export default function TicTacToe() {
     return (

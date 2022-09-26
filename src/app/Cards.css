@@ -8,7 +8,7 @@
     color: white;
     cursor: pointer;
     height: auto;
-    font-size: 16px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,9 +59,9 @@
   
   .score-container {
     color: rgb(237, 213, 196);
-    padding: 20px 0;
+    padding-bottom: 20px;
     text-align: center;
-    font-size: 32px;
+    font-size: 1.5rem;
   }
   
   .footer > button {
@@ -74,7 +74,7 @@
   }
 
 
-  @media only screen and (max-width: 610px) {
+  @media only screen and (max-width: 640px) {
     .card img {
       height: 30px;
       width: 30px
@@ -87,12 +87,12 @@
       gap: 16px 16px;
       margin: 0 auto;
       width: fit-content;
-      padding: 24px 0 33px 0;
+      padding: 10px 0 24px 0;
     }
   
   }
 
-  @media only screen and (max-width: 515px) {
+  @media only screen and (max-width: 555px) {
     .cards-container {
       display: grid;
       grid-template-columns: repeat(3, 100px);
@@ -104,11 +104,11 @@
     }
 
     .card {
-      font-size: 14px;
+      font-size: 30px;
     }
   }
 
-  @media only screen and (max-width: 390px) {
+  @media only screen and (max-width: 460px) {
     .cards-container {
       display: grid;
       grid-template-columns: repeat(3, 80px);
@@ -120,11 +120,11 @@
     }
 
     .card {
-      font-size: 12px;
+      font-size: 25px;
     }
   }
 
-  @media only screen and (max-width: 330px) {
+  @media only screen and (max-width: 380px) {
     .cards-container {
       display: grid;
       grid-template-columns: repeat(3, 60px);
@@ -136,11 +136,11 @@
     }
 
     .card {
-      font-size: 10px;
+      font-size: 20px;
     }
   }
 
-  @media only screen and (max-width: 260px) {
+  @media only screen and (max-width: 300px) {
     .cards-container {
       display: grid;
       grid-template-columns: repeat(3, 40px);
@@ -151,9 +151,10 @@
       padding: 24px 0 33px 0;
     }
 
-    .card {
-      font-size: 10px;
+    .score-container {
+      font-size: 1rem;
     }
+    
   }
   
   

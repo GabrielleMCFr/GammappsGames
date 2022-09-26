@@ -22,16 +22,15 @@ export default function Flashcards() {
       return (
         <div className="viewgame">
           <NavbarBT />
-          <main className='container-fluid game'>
+          <div className='wrap'>
+          <main className='game'>
             <h2>Memory game - Flashcards</h2>
             <Score />
             <Button variant="primary" onClick={startGameHandler}>Start Game</Button>
-            <Container>
-           
-          </Container>
             <Board />
             
           </main>
+          </div>
           <Footer/>
         </div>
         );
@@ -41,7 +40,8 @@ export default function Flashcards() {
       return (
         <div className="viewgame">
           <NavbarBT />
-          <main className='container-fluid game'>
+          <div className='wrap'>
+          <main className='game'>
             <h2>Memory game - Flashcards</h2>
             <Score />
             <Button variant="primary" onClick={startGameHandler}>Reset</Button>
@@ -53,6 +53,7 @@ export default function Flashcards() {
             </Container>
             
           </main>
+          </div>
           <Footer/>
         </div>
         );
