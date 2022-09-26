@@ -10,6 +10,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import { Link } from 'react-router-dom';
 
 function App() {
+
   return (
     <div className="App">
     <NavbarBT />
@@ -61,7 +62,8 @@ function App() {
       
 
       </Container>
-      <div className='appFooter'>
+      {}
+      <div className='appFooterFixed'>
       <Footer />
       </div>
       </div>

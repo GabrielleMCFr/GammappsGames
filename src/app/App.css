@@ -3,9 +3,6 @@
   min-width: 220px;
   width: 100%;
   margin: 0 !important;
-  bottom: 0;
-  top: 0;
-  
 }
 
 .Navlink {
@@ -49,8 +46,14 @@
   width: 100%;
 }
 
-.appFooter {
+.appFooterSticky {
   position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+.appFooterFixed {
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -104,11 +107,15 @@ h2 {
   max-height: 400px;
 }
 
+
+
 @media only screen and (max-width: 450px) {
 
   h2 {
     font-size: 2rem;
   }
+
+  
 }
 
 @media only screen and (max-width: 450px) {
@@ -128,7 +135,7 @@ h2 {
 
 /* index page */
 
-#main-bot { padding: 50px 10px 50px 10px; height: 100%; position: relative; }
+#main-bot { padding: 50px 10px 50px 10px; height: 100%; position: relative; margin-bottom: 60px;}
 
 #block { padding: 0; margin-bottom: 10px; border-radius: 5px; height: fit-content; position: relative; background-color: #494949}
 .container-title { padding: 10px 10px 10px 9px; width: 100%; background-color: #aeaeae; color: black; font-weight: bold; border-top-left-radius: 5px; border-top-right-radius: 5px;}
